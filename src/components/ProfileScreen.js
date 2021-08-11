@@ -4,6 +4,7 @@ import Nav from './Nav';
 import { useSelector } from 'react-redux';
 import { selectUser } from '../features/userSlice'
 import { auth } from '../firebase';
+import PlansScreen from './PlansScreen';
 
 function ProfileScreen() {
 
@@ -25,41 +26,7 @@ function ProfileScreen() {
               
               <h3>Plans</h3>
 
-              <h2 className="renewal_date">Renewal date</h2>
-
-              <div className="standard__plan">
-                <div className="standard__plan__1080">
-                  <h1>Netflix Standard</h1>
-                  <h2>1080p</h2>
-                </div>
-
-                <div>
-                  <button className="profileScreen__signOut">Subscribe</button>
-                </div>
-              </div>
-
-              <div className="standard__plan">
-                <div className="standard__plan__1080">
-                  <h1>Netflix Basic</h1>
-                  <h2>480p</h2>
-                </div>
-
-                <div>
-                  <button className="profileScreen__signOut">Subscribe</button>
-                </div>
-              </div>
-
-              <div className="standard__plan">
-                <div className="standard__plan__1080">
-                  <h1>Netflix Premium</h1>
-                  <h2>4K+HDR</h2>
-                </div>
-
-                <div>
-                  <button className="current__package">Current Package</button>
-                </div>
-              </div>
-
+              <PlansScreen/>
 
               <button
                 className="profileScreen__signOut"

@@ -26,7 +26,7 @@ function App() {
 
         auth.currentUser.getIdToken(/* forceRefresh */ true).then(function (idToken) {
 
-          console.log('the token is :' + idToken);
+          //console.log('the token is :' + idToken);
 
           // Send token to your backend via HTTPS
           dispatch(login({
