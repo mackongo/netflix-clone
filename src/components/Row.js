@@ -24,7 +24,6 @@ function Row({ title, fetchUrl, isLargeRow }) {
       <h2 className="title">{title}</h2>
       <div className="row__posters">
         {movies.map(movie => (
-
           ((isLargeRow && movie.poster_path) ||
           (!isLargeRow && movie.backdrop_path)) && (
             <img

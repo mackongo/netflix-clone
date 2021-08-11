@@ -4,6 +4,7 @@
   /* because we are going to have components on top of it */
   color: white;
   object-fit: contain;
+  background-color: #111;
 }
 
 .banner__contents {
@@ -29,7 +30,7 @@
   height: 80px;
 }
 
-.banner--fadeBottom {
+.banner__fadeBottom {
   height: 7.4rem;
   background-image: linear-gradient(180deg,
       transparent,
